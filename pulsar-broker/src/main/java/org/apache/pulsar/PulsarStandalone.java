@@ -210,9 +210,6 @@ public class PulsarStandalone implements AutoCloseable {
         return help;
     }
 
-    @Parameter(names = { "-c", "--config" }, description = "Configuration file path", required = true)
-    private String configFile;
-
     @Parameter(names = { "--wipe-data" }, description = "Clean up previous ZK/BK data")
     private boolean wipeData = false;
 
